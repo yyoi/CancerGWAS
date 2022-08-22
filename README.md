@@ -6,7 +6,9 @@
 ## 6.3 解析環境構築
 ### インストールするもの
 - (M1 Mac の場合)Rosetta2
-- plink 1.90 beta 6.24 64‒bit ●plink 2.00 alpha v2.00a2.3 64‒bit ●R version 4.1.0
+- plink 1.90 beta 6.24 64‒bit
+- plink 2.00 alpha v2.00a2.3 64‒bit
+- R version 4.1.0
 - R studio version 1.4.1717
 - wget 1.21.1
 - md5sum 0.9.5
