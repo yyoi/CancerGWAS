@@ -36,19 +36,19 @@ ls
 # 1
 softwareupdate --install-rosetta
 # 2-4
-# (略)
+# (本文参照)
 ```
 
 #### PLINK 1.90 beta
-(略)
+(本文参照)
 
 
 #### PLINK 2.00 alpha
-(略)
+(本文参照)
 
 
 #### R studio
-(略)
+(本文参照)
 
 #### wget
 ```bash
@@ -95,7 +95,7 @@ wget -nd http://www.medicalgenome.info/data/CancDAT/chapter6_GWAS/(破損ファ�
 # 2行目;データセットのダウンロード
 
 # 4
-# (略)
+# (本文参照)
 ```
 
 ## 6.5 サンプル QC
@@ -138,7 +138,7 @@ cd ~/Desktop/WD/QC
 # 6行目;--make-bed; バイナリplink形式で出力させる。
 
 # 2
-# (略)
+# (本文参照)
 
 # 3
 head 1000GP_Phase3_chr1.fam
@@ -243,7 +243,7 @@ cat merge-list.txt
 # 7行目;--merge-list; マージするファイル名のリストを指定する。
 
 # 7
-# (略)
+# (本文参照)
 ```
 
 ### 血縁者の除去
@@ -382,7 +382,7 @@ write.table(idlist, "./QC/sampleQC.txt", row.names=F, quote=F)
 
 
 # 10
-#（略）
+# (本文参照)
 ```
 
 ### サンプル QC 結果の反映
@@ -454,7 +454,7 @@ d2 <- merge(d, pc)
 write.table(d2, "~/Desktop/WD/DATASET/Cancer.pheno", row.names = F, quote = F)
 
 # 2
-# (略)
+# (本文参照)
 ```
 
 ```bash
@@ -596,8 +596,8 @@ d4 <- subset(d3, d3$CHR == peakCHR & d3$BP < upperBP & d3$BP > lowerBP)
 # データを保存する。
 write.table(d4, "./GWAS/hit.16.txt", row.names = F, quote = F, sep = "\t")
 
-# 2-８
-# (略)
+# 2-8
+# (本文参照)
 ```
 
 ## 6.9 下流解析
