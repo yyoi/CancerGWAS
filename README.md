@@ -334,7 +334,6 @@ wget \
 # 6
 install.packages("ggplot2")
 
-
 # 7
 # ggplot2 を読み込む
 library(ggplot2)
@@ -368,7 +367,6 @@ ggplot(data=d3, aes(x=PC1, y=PC2, color=pop)) +
  geom_point()
 ggsave("pca.png")
 
-
 # 8
 # PC1，PC2で範囲指定し，サブセットを作成する。
 d4 <- subset(d3, d3$PC1 > -0.05 & d3$PC1 < 0.01 & d3$PC2 > -0.05 & d3$PC2 < 0.05)
@@ -378,7 +376,6 @@ ggplot(data=d4, aes(x=PC1, y=PC2, color=pop)) +
   geom_point()
 ggsave("pca2.png")
 
-
 # 9
 # IDを含む1,2列目のみ取り出す。
 idlist <- d4[,2:1]
@@ -386,7 +383,6 @@ idlist <- d4[,2:1]
 # リストを書き出す。row.names=Fを指定することで，行番号が記載されるのを防ぐ。
 # また，quote=Fと指定して，各セルのデータがダブルクォーテーションで囲われるのを防ぐ。
 write.table(idlist, "./QC/sampleQC.txt", row.names=F, quote=F)
-
 
 # 10
 # (本文参照)
@@ -510,7 +506,6 @@ done
 # 14行目;--memory; 使用可能なメモリサイズ。一般に大きいほど速くなる。単位はMb。
 # 15行目;--threads; 使用可能なCPUコア数。一般に大きいほど速くなる。
 
-
 # 2
 wc -l Cancer.gwas.chr{1..22}.PHENO.glm.logistic
 
@@ -522,7 +517,6 @@ cat header.txt body.txt > Cancer.gwas.chrALL.PHENO.glm.logistic
 # 2行目;実行結果のヘッダー行のみ別に保存しておく。
 # 3行目;各染色体の結果を結合し，#で始まるヘッダー行を除く。 
 # 4行目;2，3行目で処理した結果を結合する。
-
 
 # 4
 head Cancer.gwas.chrALL.PHENO.glm.logistic
