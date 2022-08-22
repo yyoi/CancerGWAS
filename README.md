@@ -121,7 +121,7 @@ head 1000GP_Phase3_chr1.sample
 gunzip -c 1000GP_Phase3_chr1.gen.gz | head | cut -d " " -f 1-10
 ```
 
-### ファイル形式の変換 1
+### ファイル形式の変換
 ```bash
 # bash
 # 1 
